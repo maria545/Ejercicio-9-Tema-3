@@ -5,8 +5,73 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ejercicio_9_Tema_3"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="EquiposNBA" Height="450" Width="800"
+        Icon="bas.ico">
+
+    <Window.Resources>
+        <Style TargetType="Image">
+            <Setter Property="Width" Value="140"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+        <Style TargetType="Border">
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="CornerRadius" Value="3"/>
+            <Setter Property="BorderThickness" Value="3"/>
+        </Style>
+    </Window.Resources>
+    
+
+    <StackPanel Margin="10">
         
-    </Grid>
+        <Border>
+            <StackPanel>
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF9E6ED6" Offset="0.257"/>
+                        <GradientStop Color="#FFA7AE1E" Offset="0.812"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <WrapPanel HorizontalAlignment="Center">
+                    <TextBlock Text="Los Ángeles Lakers"/>
+                </WrapPanel>
+
+                <WrapPanel HorizontalAlignment="Center" >
+                    <Image Source="9_lakers.png"/>
+                    <Image Source="14_lakers.png"/>
+                    <Image Source="23_lakers.png"/>
+                    <Image Source="3_lakers.png"/>
+                    <Image Source="39_lakers.png"/>
+                </WrapPanel>
+
+            </StackPanel>
+        </Border>
+        
+        <Border>
+            <StackPanel>
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="0"/>
+                        <GradientStop Color="#FFCF1616" Offset="0.896"/>
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+
+                <WrapPanel HorizontalAlignment="Center">
+                    <TextBlock Text="Miami Heat" Foreground="White"/>
+                </WrapPanel>
+
+                <WrapPanel HorizontalAlignment="Center">
+                    <Image Source="7_heat.png"/>
+                    <Image Source="14_heat.png"/>
+                    <Image Source="22_heat.png"/>
+                    <Image Source="99_heat.png"/>
+                    <Image Source="13_heat.png"/>
+                </WrapPanel>
+            </StackPanel>
+        </Border>
+    </StackPanel>
 </Window>
